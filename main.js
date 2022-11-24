@@ -1,8 +1,7 @@
 let text2 = document.getElementById("result2");
-let btn = document.querySelectorAll("button");
+let btn = document.querySelectorAll("span");
 
 let paper = document.getElementById("paper");
-
 
 paper.addEventListener("click", function (){ // Permet de copier dans le press-papier"
     navigator.clipboard.writeText(text2.value).then(function() {
@@ -17,7 +16,7 @@ for(let i = 0; i < btn.length; i++){
         myFunc(i)
     })
 }
-
+  
 function myFunc(i) {
     switch(btn[i].innerText)
     {
